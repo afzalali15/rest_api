@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteRule ^employees/?$ employees.php [NC,L]
+RewriteRule ^employees/([0-9]+)/?$ employees.php?id=$1 [NC,L]
+SetEnvIf Authorization .+ HTTP_AUTHORIZATION=$0
